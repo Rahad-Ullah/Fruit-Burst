@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +12,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
+
 <body class="font-lato">
     <header class="container mx-auto px-4 md:px-8 lg:px-12">
-        <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-[#12121298] rounded-lg h-56 md:h-auto">
-              <img src="images/banner1.png" class="w-full bg-cover mix-blend-overlay" />
-              <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a>
-                <div class="text-center text-white max-w-screen-sm lg:relative -top-[4vw]">
-                    <h2 class="text-2xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-1 md:mb-4">Exotic tastes at your doorstep</h2>
-                    <p class="text-md md:text-xl font-normal mb-4 md:mb-8">We supply highly quality organic products</p>
-                    <button class="btn btn-primary text-xl text-white font-bold normal-case bg-rose-500 hover:bg-rose-600 border-0">Shop Now</button>
-                </div>
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
 
+        <!-- Banner Section -->
+        <div class="carousel w-full">
+            <div id="slide1"
+                class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-[#12121298] rounded-lg h-56 md:h-auto">
+                <img src="images/banner1.png" class="w-full bg-cover mix-blend-overlay" />
+                <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle bg-[#121212] border-0 text-white">❮</a>
+                    <div class="text-center text-white max-w-screen-sm lg:relative -top-[4vw]">
+                        <h2 class="text-2xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-1 md:mb-4">Exotic tastes
+                            at your doorstep</h2>
+                        <p class="text-md md:text-xl font-normal mb-4 md:mb-8">We supply highly quality organic products</p>
+                        <button
+                            class="btn btn-primary text-xl text-white font-bold normal-case bg-rose-500 hover:bg-rose-600 border-0">Shop
+                            Now</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle bg-[#121212] border-0 text-white">❯</a>
+                </div>
+            </div>
+    
         </div>
-        <div class="hidden lg:flex justify-between items-center gap-16 bg-white mx-auto p-12 w-10/12  rounded-lg shadow-[0_8px_60px_0px_rgba(0,0,0,0.1)] relative -top-[8vw]">
+        <div
+            class="hidden lg:flex justify-between items-center gap-16 bg-white mx-auto p-12 w-10/12  rounded-lg shadow-[0_8px_60px_0px_rgba(0,0,0,0.1)] relative -top-[8vw]">
             <div class="flex flex-col items-center">
                 <img src="images/fruit1.png" class="w-full" alt="fruit1">
                 <p class="text-lg font-medium text-[#121212]">Grapes</p>
@@ -55,42 +64,44 @@
                 <p class="text-lg font-medium text-[#121212]">Pomegranate</p>
             </div>
         </div>
-    </header>
+    </header>    
     <main class="container mx-auto px-4 md:px-8 lg:px-12">
         <!-- Deal of the day Section -->
-        <section class="my-12">
+        <section class="my-12 md:my-16 lg:mb-32">
             <div class="flex flex-col lg:flex-row justify-between items-center gap-y-8">
-                <div class="max-w-md text-center lg:text-left">
-                    <h2 class="text-5xl lg:text-5xl font-extrabold text-[#121212] mb-12">Deal of the day</h2>
-                    <p class="font-medium text-[#121212b1]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="max-w-md text-center lg:text-left px-4">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-[#121212] mb-6 md:mb-12">Deal of the day</h2>
+                    <p class="font-medium text-[#121212b1]">Contrary to popular belief, is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
                 </div>
                 <div class="">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                         <div class="flex flex-col">
-                          <span class="countdown font-lato font-extrabold text-5xl">
-                            <span class="text-[#121212]" style="--value:15;"></span>
-                          </span>
-                          days
-                        </div> 
-                        <div class="flex flex-col">
-                          <span class="countdown font-lato font-extrabold text-5xl">
-                            <span class="text-[#121212]" style="--value:10;"></span>
-                          </span>
-                          hours
-                        </div> 
-                        <div class="flex flex-col">
-                          <span class="countdown font-lato font-extrabold text-5xl">
-                            <span class="text-[#121212]" style="--value:24;"></span>
-                          </span>
-                          min
-                        </div> 
-                        <div class="flex flex-col">
-                          <span class="countdown font-lato font-extrabold text-5xl">
-                            <span class="text-[#121212]" style="--value:52;"></span>
-                          </span>
-                          sec
+                            <span class="countdown font-lato font-extrabold text-5xl">
+                                <span class="text-[#121212]" style="--value:15;"></span>
+                            </span>
+                            days
                         </div>
-                      </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-lato font-extrabold text-5xl">
+                                <span class="text-[#121212]" style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-lato font-extrabold text-5xl">
+                                <span class="text-[#121212]" style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-lato font-extrabold text-5xl">
+                                <span class="text-[#121212]" style="--value:52;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -99,279 +110,317 @@
                 <!-- card 1 -->
                 <div class="card bg-base-100 rounded-lg border px-2">
                     <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
+                        <img src="images/fruit7.png" alt="fruit" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
-                      <p class="py-6 border-t-2 w-full text-[#121212b1] ">Apples</p>
-                      <div class="rating rating-md rating-half mb-8">
-                        <input type="radio" name="rating-4" class="rating-hidden" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked/>
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                      </div>
-                      <div class="card-actions">
-                        <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
-                      </div>
-                    </div>
-                  </div>
-                <div class="card bg-base-100 rounded-lg border px-2">
-                    <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
-                      <p class="py-6 border-t-2 w-full text-[#121212b1] ">Apples</p>
-                      <div class="rating rating-md rating-half mb-8">
-                        <input type="radio" name="rating-4" class="rating-hidden" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked/>
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                      </div>
-                      <div class="card-actions">
-                        <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
-                      </div>
-                    </div>
-                  </div>
-                <div class="card bg-base-100 rounded-lg border px-2">
-                    <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
-                      <p class="py-6 border-t-2 w-full text-[#121212b1] ">Apples</p>
-                      <div class="rating rating-md rating-half mb-8">
-                        <input type="radio" name="rating-4" class="rating-hidden" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" checked/>
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                      </div>
-                      <div class="card-actions">
-                        <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
-                      </div>
-                    </div>
-                  </div>
-                <div class="card bg-base-100 rounded-lg border px-2">
-                    <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
-                      <p class="py-6 border-t-2 w-full text-[#121212b1] ">Apples</p>
-                      <div class="rating rating-md rating-half mb-8">
-                        <input type="radio" name="rating-4" class="rating-hidden" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked/>
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                      </div>
-                      <div class="card-actions">
-                        <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
-                      </div>
+                        <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
+                        <p class="py-6 border-t-2 w-full text-[#121212b1] ">Orange</p>
+                        <div class="rating rating-md rating-half mb-8">
+                            <input type="radio" name="rating-4" class="rating-hidden" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
+                        </div>
                     </div>
                 </div>
+                <div class="card bg-base-100 rounded-lg border px-2">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit8.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
+                        <p class="py-6 border-t-2 w-full text-[#121212b1] ">Red Dragon</p>
+                        <div class="rating rating-md rating-half mb-8">
+                            <input type="radio" name="rating-4" class="rating-hidden" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 rounded-lg border px-2">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit9.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
+                        <p class="py-6 border-t-2 w-full text-[#121212b1] ">Banana</p>
+                        <div class="rating rating-md rating-half mb-8">
+                            <input type="radio" name="rating-4" class="rating-hidden" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                                checked />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 rounded-lg border px-2">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] mb-6">12.90$ - 18.85$</h2>
+                        <p class="py-6 border-t-2 w-full text-[#121212b1] ">Apples</p>
+                        <div class="rating rating-md rating-half mb-8">
+                            <input type="radio" name="rating-4" class="rating-hidden" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-lg text-[#F85559] font-bold normal-case">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-6 md:mt-12">
+                <button class="btn bg-[#F85559] text-white normal-case text-xl font-bold">Shop All</button>
             </div>
         </section>
 
         <!-- Meet our team section -->
-        <section>
-            <div class="my-32 py-28 gap-12 flex flex-col justify-center items-center  rounded-lg  bg-gradient-to-r from-[#000000d8] to-[#000000de] relative text-white">
-                <img src="images/banner1.png" class="absolute h-full w-full object-cover bg-cover mix-blend-overlay" alt="">
+        <section class="my-12 md:my-16 lg:my-32">
+            <div
+                class="py-8 md:py-16 lg:py-28 px-4 flex flex-col justify-center items-center gap-12 rounded-lg  bg-gradient-to-r from-[#000000d8] to-[#000000de] relative text-white">
+                <img src="images/banner1.png" class="absolute h-full w-full object-cover bg-cover mix-blend-overlay"
+                    alt="">
                 <div class="max-w-screen-sm text-center">
-                <h2 class="text-5xl lg:text-5xl font-extrabold mb-6">Meet Our Team</h2>
-                <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Meet Our Team</h2>
+                    <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a
+                        piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <!-- Card Container -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center gap-6 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center gap-6">
                     <!-- card 1 -->
                     <div class="card">
                         <figure class="px-10 pt-10">
-                          <img src="images/member1.png" alt="fruit" class="rounded-xl" />
+                            <img src="images/member1.png" alt="fruit" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title text-2xl">Awlad Hossain</h2>
-                          <p class="font-medium">Fruits Expert</p>
-                          <div class="card-actions mt-4">
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-facebook-f text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-twitter text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-linkedin-in text-lg"></i>
-                            </button>
-                          </div>
+                            <h2 class="card-title text-2xl">Awlad Hossain</h2>
+                            <p class="font-medium">Fruits Expert</p>
+                            <div class="card-actions mt-4">
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-twitter text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                </button>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                     <!-- card 1 -->
                     <div class="card">
                         <figure class="px-10 pt-10">
-                          <img src="images/member2.png" alt="fruit" class="rounded-xl" />
+                            <img src="images/member2.png" alt="fruit" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title text-2xl">Safia Chowdhury</h2>
-                          <p class="font-medium">Fruits Expert</p>
-                          <div class="card-actions mt-4">
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-facebook-f text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-twitter text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-linkedin-in text-lg"></i>
-                            </button>
-                          </div>
+                            <h2 class="card-title text-2xl">Safia Chowdhury</h2>
+                            <p class="font-medium">Fruits Expert</p>
+                            <div class="card-actions mt-4">
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-twitter text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                </button>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                     <!-- card 1 -->
                     <div class="card">
                         <figure class="px-10 pt-10">
-                          <img src="images/member3.png" alt="fruit" class="rounded-xl" />
+                            <img src="images/member3.png" alt="fruit" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title text-2xl">Awlad Hossain</h2>
-                          <p class="font-medium">Rokib Hossain</p>
-                          <div class="card-actions mt-4">
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-facebook-f text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-twitter text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-linkedin-in text-lg"></i>
-                            </button>
-                          </div>
+                            <h2 class="card-title text-2xl">Awlad Hossain</h2>
+                            <p class="font-medium">Fruits Expert</p>
+                            <div class="card-actions mt-4">
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-twitter text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                </button>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                     <!-- card 1 -->
                     <div class="card">
                         <figure class="px-10 pt-10">
-                          <img src="images/member4.png" alt="fruit" class="rounded-xl" />
+                            <img src="images/member4.png" alt="fruit" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title text-2xl">Awlad Hossain</h2>
-                          <p class="font-medium">Chaity</p>
-                          <div class="card-actions mt-4">
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-facebook-f text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-twitter text-lg"></i>
-                            </button>
-                            <button class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
-                                <i class="fa-brands fa-linkedin-in text-lg"></i>
-                            </button>
-                          </div>
+                            <h2 class="card-title text-2xl">Chaity</h2>
+                            <p class="font-medium">Fruits Expert</p>
+                            <div class="card-actions mt-4">
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-twitter text-lg"></i>
+                                </button>
+                                <button
+                                    class=" text-white bg-[#F85559] w-6 h-6 flex justify-center items-center p-4 rounded-full border-0">
+                                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                </button>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Why Choose Us Section -->
         <section>
-            <div class="my-32 py-28 gap-12 text-center text-[#121212]">
+            <div class="my-12 md:my-16 lg:my-32 gap-12 text-center text-[#121212]">
                 <div class="max-w-screen-sm mx-auto text-center">
-                    <h2 class="text-5xl lg:text-5xl font-extrabold mb-6">Meet Our Team</h2>
-                    <p class="font-medium text-[#121212b1]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                    </div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Why Choose Us</h2>
+                    <p class="font-medium text-[#121212b1]">Contrary to popular belief, is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
                 <!-- Card Container -->
-                <div class="grid grid-cols-1 lg:grid-cols-3 justify-center lg:justify-between items-center gap-6 gap-y-10 mt-12">
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-3 justify-center lg:justify-between items-center gap-6 gap-y-10 mt-12">
                     <!-- card 1 -->
-                    <div class="card text-start flex flex-col justify-between items-center gap-2">
-                        <div class="flex justify-between items-start gap-4">
-                            <div class="p-3 mt-2 flex-1 bg-[#12121214] rounded-full">
-                                <img src="images/group 1.svg" class="w-full" alt="">
+                    <div
+                        class="card text-center lg:text-start flex flex-col justify-between items-center gap-2 order-2 lg:order-1">
+                        <div class="flex flex-col lg:flex-row items-center justify-between lg:items-start gap-4">
+                            <div class="p-5 lg:p-2 mt-2 flex-1 bg-[#12121214] rounded-full">
+                                <img src="images/group 1.svg" class="w-10" alt="">
                             </div>
-                            <div class="w-10/12 flex flex-col items-start">
+                            <div class="w-10/12 flex flex-col items-center lg:items-start">
                                 <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
                                 <div class="w-1/3 border-b-2 border-[#121212ba] mt-5 mb-4"></div>
-                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
-                        <div class="flex justify-between items-start gap-4">
-                            <div class="p-3 mt-2 flex-1 bg-[#12121214] rounded-full">
-                                <img src="images/love 1.svg" class="w-full" alt="">
+                        <div class="flex flex-col lg:flex-row items-center justify-between lg:items-start gap-4">
+                            <div class="p-5 lg:p-2 mt-2 flex-1 bg-[#12121214] rounded-full">
+                                <img src="images/love 1.svg" class="w-10" alt="">
                             </div>
-                            <div class="w-10/12 flex flex-col items-start">
+                            <div class="w-10/12 flex flex-col items-center lg:items-start">
                                 <h3 class="text-2xl font-extrabold">Fresh is Best</h3>
                                 <div class="w-1/3 border-b-2 border-[#121212ba] mt-5 mb-4"></div>
-                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
-                        <div class="flex justify-between items-start gap-4">
-                            <div class="p-3 mt-2 flex-1 bg-[#12121214] rounded-full">
-                                <img src="images/gift-box 1.svg" class="w-full" alt="">
+                        <div class="flex flex-col lg:flex-row items-center justify-between lg:items-start gap-4">
+                            <div class="p-5 lg:p-2 mt-2 flex-1 bg-[#12121214] rounded-full">
+                                <img src="images/gift-box 1.svg" class="w-10" alt="">
                             </div>
-                            <div class="w-10/12 flex flex-col items-start">
+                            <div class="w-10/12 flex flex-col items-center lg:items-start">
                                 <h3 class="text-2xl font-extrabold">Gift Certificates</h3>
                                 <div class="w-1/3 border-b-2 border-[#121212ba] mt-5 mb-4"></div>
-                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <!-- Card 2 -->
+                    <div class="order-1 lg:order-2 mx-auto">
                         <img src="images/whychoose1.png" alt="">
                     </div>
-                    <div class="card text-right flex flex-col justify-between items-center gap-2">
-                        <div class="flex flex-row-reverse justify-between items-start gap-4">
-                            <div class="p-3 mt-2 flex-1 bg-[#12121214] rounded-full">
-                                <img src="images/group 1.svg" class="w-full" alt="">
+                    <!-- Card 3 -->
+                    <div class="card text-center lg:text-end flex flex-col justify-between items-center gap-2 order-3">
+                        <div
+                            class="flex flex-col lg:flex-row-reverse items-center justify-between lg:items-start gap-4">
+                            <div class="p-5 lg:p-2 mt-2 flex-1 bg-[#12121214] rounded-full">
+                                <img src="images/fruit 1.svg" class="w-10" alt="">
                             </div>
-                            <div class="w-10/12 flex flex-col items-end">
-                                <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                            <div class="w-10/12 flex flex-col items-center lg:items-end">
+                                <h3 class="text-2xl font-extrabold">Integrated Supplier</h3>
                                 <div class="w-1/3 border-b-2 border-[#121212ba] mt-5 mb-4"></div>
-                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
-                        <div class="flex flex-row-reverse justify-between items-start gap-4">
-                            <div class="p-3 mt-2 flex-1 bg-[#12121214] rounded-full">
-                                <img src="images/love 1.svg" class="w-full" alt="">
+                        <div
+                            class="flex flex-col lg:flex-row-reverse items-center justify-between lg:items-start gap-4">
+                            <div class="p-5 lg:p-2 mt-2 flex-1 bg-[#12121214] rounded-full">
+                                <img src="images/ice-cream 1.svg" class="w-10" alt="">
                             </div>
-                            <div class="w-10/12 flex flex-col items-end">
-                                <h3 class="text-2xl font-extrabold">Fresh is Best</h3>
+                            <div class="w-10/12 flex flex-col items-center lg:items-end">
+                                <h3 class="text-2xl font-extrabold">Sustainable Practice</h3>
                                 <div class="w-1/3 border-b-2 border-[#121212ba] mt-5 mb-4"></div>
-                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
-                        <div class="flex flex-row-reverse justify-between items-start gap-4">
-                            <div class="p-3 mt-2 flex-1 bg-[#12121214] rounded-full">
-                                <img src="images/gift-box 1.svg" class="w-full" alt="">
+                        <div
+                            class="flex flex-col lg:flex-row-reverse items-center justify-between lg:items-start gap-4">
+                            <div class="p-5 lg:p-2 mt-2 flex-1 bg-[#12121214] rounded-full">
+                                <img src="images/like 1.svg" class="w-10" alt="">
                             </div>
-                            <div class="w-10/12 flex flex-col items-end">
-                                <h3 class="text-2xl font-extrabold">Gift Certificates</h3>
+                            <div class="w-10/12 flex flex-col items-center lg:items-end">
+                                <h3 class="text-2xl font-extrabold">The Benefits Only</h3>
                                 <div class="w-1/3 border-b-2 border-[#121212ba] mt-5 mb-4"></div>
-                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <p class="font-medium text-[#121212b1]">Professional employees are there for you to pick
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
                     </div>
@@ -379,11 +428,38 @@
             </div>
         </section>
     </main>
-    <footer>
 
+    <!-- Footer Section -->
+    <footer class="footer footer-center py-32 px-4 bg-[#121212] text-white">
+        <div class="flex items-center gap-4">
+            <div class="">
+                <img src="images/logo.png" class="w-14" alt="logo">
+            </div>
+            <h2 class="text-4xl font-bold">Fruit Burst</h2>
+        </div>
+        <ul class="flex justify-center items-center flex-wrap lg:flex-nowrap gap-16 gap-y-6 text-lg font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">My Account</a></li>
+        </ul>
+        <div>
+            <ul class="grid grid-flow-col gap-10 text-2xl md:text-4xl">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-apple"></i>
+            </ul>
+        </div>
+        <p>Copyright © 2023 - All right reserved</p>
     </footer>
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/9c87656713.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
